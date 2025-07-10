@@ -21,8 +21,8 @@ html {
     --primary: 195 85% 45%; /* Strong Cyan */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 200 50% 90%; /* Light Cyan */
-    --secondary-foreground: 195 85% 25%;
+    --secondary: 210 20% 88%; /* Light Silver */
+    --secondary-foreground: 225 25% 25%; /* Dark Slate for contrast */
 
     --muted: 220 15% 90%;
     --muted-foreground: 220 10% 45%;
@@ -33,7 +33,7 @@ html {
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 85%;
+    --border: 220 15% 80%; /* Silver Border */
     --input: 220 15% 85%;
     --ring: 195 85% 50%;
     
@@ -67,8 +67,8 @@ html {
     --primary: 185 90% 50%; /* Glowing Cyan */
     --primary-foreground: 225 25% 10%;
 
-    --secondary: 225 25% 25%; /* Dark Muted Navy */
-    --secondary-foreground: 185 80% 70%; 
+    --secondary: 220 15% 25%; /* Dark Silver/Gunmetal */
+    --secondary-foreground: 210 30% 85%; /* Light Silver Text */
 
     --muted: 225 25% 20%; 
     --muted-foreground: 220 15% 60%;
@@ -79,7 +79,7 @@ html {
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 225 25% 22%; /* Navy Border */
+    --border: 220 15% 30%; /* Dark Silver Border */
     --input: 225 25% 22%;
     --ring: 185 90% 55%;
 
