@@ -27,7 +27,7 @@ export function EducationSection() {
             <div
               key={edu.institution + '-' + index}
               className="animate-fade-in-up"
-              style={{ opacity: 0, animationDelay: `${300 + index * 100}ms` }}
+              style={{ opacity: 0, animationDelay: `${300 + index * 150}ms` }}
             >
               <Card 
                 className="shadow-sm card-hover"

@@ -84,30 +84,30 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div
-          className="animate-fade-in-up"
-          style={{ opacity: 0, animationDelay: '300ms' }}
-        >
-          <div className="mt-8 flex flex-wrap items-stretch justify-center gap-4 sm:gap-6 md:gap-8">
-            {contactItems.map((item) => (
-              <Link 
-                key={item.text} 
-                href={item.href} 
-                target={item.target} 
-                rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
-                aria-label={item.ariaLabel}
-                className={`block p-4 sm:p-6 border rounded-lg shadow-sm hover:shadow-md transition-all duration-300 ease-in-out transform hover:scale-[1.03] hover:-translate-y-1 bg-card text-center ${item.minWidthClass} group`}
+        <div className="mt-8 flex flex-wrap items-stretch justify-center gap-4 sm:gap-6 md:gap-8">
+            {contactItems.map((item, index) => (
+              <div
+                key={item.text}
+                className="animate-fade-in-up"
+                style={{ opacity: 0, animationDelay: `${300 + index * 100}ms` }}
               >
-                <div className="flex flex-col items-center justify-center">
-                  <item.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary group-hover:text-accent mb-3 sm:mb-4 transition-colors" />
-                  <span className="text-base sm:text-lg font-medium text-foreground/90 break-words">
-                    {item.text}
-                  </span>
-                </div>
-              </Link>
+                <Link 
+                  href={item.href} 
+                  target={item.target} 
+                  rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
+                  aria-label={item.ariaLabel}
+                  className={`block p-4 sm:p-6 border rounded-lg shadow-sm transition-all duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 bg-card text-center ${item.minWidthClass} group card-hover`}
+                >
+                  <div className="flex flex-col items-center justify-center">
+                    <item.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary group-hover:text-accent mb-3 sm:mb-4 transition-colors" />
+                    <span className="text-base sm:text-lg font-medium text-foreground/90 break-words">
+                      {item.text}
+                    </span>
+                  </div>
+                </Link>
+              </div>
             ))}
           </div>
-        </div>
       </div>
     </section>
   );

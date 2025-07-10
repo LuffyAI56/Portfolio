@@ -124,6 +124,6 @@ html {
   }
 
   .card-hover {
-    @apply transition-all duration-300 ease-in-out hover:shadow-xl hover:border-border;
+    @apply transition-all duration-300 ease-in-out hover:shadow-xl hover:border-primary hover:-translate-y-2;
   }
 }

@@ -38,7 +38,7 @@ export function SkillsSection() {
               <div
                 key={skillCategory.category}
                 className="animate-fade-in-up h-full"
-                style={{ opacity: 0, animationDelay: `${300 + index * 100}ms` }}
+                style={{ opacity: 0, animationDelay: `${300 + index * 150}ms` }}
               >
                 <Card
                   className="shadow-sm card-hover h-full"
