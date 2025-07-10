@@ -67,19 +67,17 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-background">
+    <section id="contact" className="py-16 sm:py-24 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2
-            className="font-headline text-4xl font-bold sm:text-5xl animate-fade-in-up"
+            className="section-title animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '100ms' }}
           >
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
-              Get In Touch
-            </span>
+            Get In Touch
           </h2>
           <p
-            className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up"
+            className="section-subtitle animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '200ms' }}
           >
             Feel free to reach out for collaborations, opportunities, or just a chat.
@@ -98,7 +96,7 @@ export function ContactSection() {
                 target={item.target} 
                 rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
                 aria-label={item.ariaLabel}
-                className={`block p-4 sm:p-6 border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-[1.03] hover:-translate-y-1 bg-card text-center ${item.minWidthClass} group`}
+                className={`block p-4 sm:p-6 border rounded-lg shadow-sm hover:shadow-md transition-all duration-300 ease-in-out transform hover:scale-[1.03] hover:-translate-y-1 bg-card text-center ${item.minWidthClass} group`}
               >
                 <div className="flex flex-col items-center justify-center">
                   <item.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary group-hover:text-accent mb-3 sm:mb-4 transition-colors" />

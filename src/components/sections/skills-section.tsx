@@ -14,19 +14,17 @@ const categoryIcons: { [key: string]: React.ElementType } = {
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="py-16 sm:py-24 bg-secondary/30">
+    <section id="skills" className="py-16 sm:py-24 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2
-            className="font-headline text-4xl font-bold sm:text-5xl animate-fade-in-up"
+            className="section-title animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '100ms' }}
           >
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
-              Technical Skills
-            </span>
+            Technical Skills
           </h2>
           <p
-            className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up"
+            className="section-subtitle animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '200ms' }}
           >
             A collection of technologies and tools I'm proficient with.
@@ -43,12 +41,12 @@ export function SkillsSection() {
                 style={{ opacity: 0, animationDelay: `${300 + index * 100}ms` }}
               >
                 <Card
-                  className="shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.07] hover:-translate-y-1 h-full"
+                  className="shadow-sm card-hover h-full"
                 >
                   <CardHeader>
                     <CardTitle className="flex items-center text-xl font-semibold">
                       <Icon className="mr-3 h-6 w-6 text-primary/80" />
-                      <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
+                      <span>
                         {skillCategory.category}
                       </span>
                     </CardTitle>
@@ -56,7 +54,7 @@ export function SkillsSection() {
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
                       {skillCategory.skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="px-3 py-1 text-sm bg-primary/10 text-primary hover:bg-primary/20">
+                        <Badge key={skill} variant="secondary" className="px-3 py-1 text-sm font-normal">
                           {skill}
                         </Badge>
                       ))}

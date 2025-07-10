@@ -33,47 +33,41 @@ export function HeroSection() {
     return (
       <section
         id="hero"
-        className="flex min-h-[calc(100vh-5rem)] items-center bg-gradient-to-br from-background to-secondary/30 py-20"
+        className="flex min-h-[calc(100vh-5rem)] items-center bg-secondary/50 py-20"
       >
         <div className="container mx-auto px-4 text-center sm:px-6 lg:px-8">
           {/* Placeholder for H1 */}
-          <div className="mx-auto h-16 w-3/4 animate-pulse rounded-md bg-muted/30 sm:h-20 md:h-24"></div>
+          <div className="mx-auto h-16 w-3/4 animate-pulse rounded-md bg-muted sm:h-20 md:h-24"></div>
           {/* Placeholder for P (role) */}
-          <div className="mx-auto mt-6 h-8 w-1/2 animate-pulse rounded-md bg-muted/30 sm:h-10 md:h-12"></div>
+          <div className="mx-auto mt-6 h-8 w-1/2 animate-pulse rounded-md bg-muted sm:h-10 md:h-12"></div>
           {/* Placeholder for P (tagline) */}
-          <div className="mx-auto mt-8 h-6 w-5/6 max-w-3xl animate-pulse rounded-md bg-muted/30 sm:h-7"></div>
+          <div className="mx-auto mt-8 h-6 w-5/6 max-w-3xl animate-pulse rounded-md bg-muted sm:h-7"></div>
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <div className="h-11 w-40 animate-pulse rounded-md bg-primary/30" />
             <div className="h-11 w-40 animate-pulse rounded-md bg-muted/30" />
           </div>
           <div className="mt-12 flex justify-center space-x-6">
-            <div className="h-10 w-10 animate-pulse rounded-full bg-muted/30" />
-            <div className="h-10 w-10 animate-pulse rounded-full bg-muted/30" />
-            <div className="h-10 w-10 animate-pulse rounded-full bg-muted/30" />
-            {portfolioData.contact.kaggle && <div className="h-10 w-10 animate-pulse rounded-full bg-muted/30" />}
+            <div className="h-10 w-10 animate-pulse rounded-full bg-muted" />
+            <div className="h-10 w-10 animate-pulse rounded-full bg-muted" />
+            <div className="h-10 w-10 animate-pulse rounded-full bg-muted" />
+            {portfolioData.contact.kaggle && <div className="h-10 w-10 animate-pulse rounded-full bg-muted" />}
           </div>
         </div>
       </section>
     );
   }
 
-  const nameParts = portfolioData.name.split(" ");
-  const firstName = nameParts[0];
-  const lastName = nameParts.slice(1).join(" ");
-
   return (
     <section
       id="hero"
-      className="flex min-h-[calc(100vh-5rem)] items-center bg-gradient-to-br from-background to-secondary/30 py-20"
+      className="flex min-h-[calc(100vh-5rem)] items-center bg-secondary/50 py-20"
     >
       <div className="container mx-auto px-4 text-center sm:px-6 lg:px-8">
         <h1
-          className="font-headline text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl animate-fade-in-up"
+          className="font-bold tracking-tight text-5xl sm:text-6xl md:text-7xl animate-fade-in-up"
           style={{ animationDelay: '100ms', opacity: 0 }}
         >
-          <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
-            {firstName} {lastName}
-          </span>
+          {portfolioData.name}
         </h1>
         <div
           className="mt-6 text-xl text-foreground/90 sm:text-2xl md:text-3xl animate-fade-in-up min-h-[2.5em] sm:min-h-[2.8em] md:min-h-[3em]"
@@ -99,7 +93,7 @@ export function HeroSection() {
           <Button size="lg" asChild>
             <Link href="#projects">View Projects</Link>
           </Button>
-          <Button size="lg" variant="outline" asChild>
+          <Button size="lg" variant="secondary" asChild>
             <Link href="#contact">Get in Touch <ArrowDown className="ml-2 h-5 w-5" /></Link>
           </Button>
         </div>

@@ -9,94 +9,94 @@ html {
 
 @layer base {
   :root {
-    --background: 220 15% 95%; /* Light Cool Gray */
-    --foreground: 225 25% 15%; /* Dark Slate Blue */
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 10%; /* Near Black */
 
     --card: 0 0% 100%;
-    --card-foreground: 225 25% 15%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 225 25% 15%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 195 85% 45%; /* Strong Cyan */
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 100% 50%; /* Apple Blue */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 20% 88%; /* Light Silver */
-    --secondary-foreground: 225 25% 25%; /* Dark Slate for contrast */
+    --secondary: 0 0% 96%; /* Light Gray */
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 220 15% 90%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 0 0% 90%; /* Gray */
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 320 80% 60%; /* Vibrant Magenta */
-    --accent-foreground: 210 40% 98%;
+    --accent: 210 100% 50%; /* Apple Blue */
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 80%; /* Silver Border */
-    --input: 220 15% 85%;
-    --ring: 195 85% 50%;
+    --border: 0 0% 90%;
+    --input: 0 0% 88%;
+    --ring: 210 100% 50%;
     
-    --chart-1: 195 85% 45%;   /* Strong Cyan */
-    --chart-2: 320 80% 60%;   /* Vibrant Magenta */
-    --chart-3: 195 70% 60%;   /* Lighter Cyan */
-    --chart-4: 320 60% 70%;   /* Lighter Magenta */
-    --chart-5: 210 70% 55%;   /* Electric Blue */
-    --radius: 0.5rem;
+    --chart-1: 210 100% 50%; /* Apple Blue */
+    --chart-2: 0 0% 65%; /* Mid Gray */
+    --chart-3: 210 100% 75%; /* Lighter Blue */
+    --chart-4: 0 0% 80%; /* Light Gray */
+    --chart-5: 0 0% 50%; /* Darker Gray */
+    --radius: 0.75rem;
 
-    --sidebar-background: 220 15% 95%; 
-    --sidebar-foreground: 225 25% 15%; 
-    --sidebar-primary: 195 85% 45%;    
-    --sidebar-primary-foreground: 210 40% 98%; 
-    --sidebar-accent: 320 80% 60%;     
-    --sidebar-accent-foreground: 210 40% 98%; 
-    --sidebar-border: 220 15% 85%;      
-    --sidebar-ring: 195 85% 50%;
+    --sidebar-background: 0 0% 97%; 
+    --sidebar-foreground: 0 0% 10%; 
+    --sidebar-primary: 210 100% 50%;    
+    --sidebar-primary-foreground: 0 0% 98%; 
+    --sidebar-accent: 210 100% 55%;     
+    --sidebar-accent-foreground: 0 0% 98%; 
+    --sidebar-border: 0 0% 90%;      
+    --sidebar-ring: 210 100% 50%;
   }
  
   .dark {
-    --background: 225 25% 10%; /* Deep Navy Blue */
-    --foreground: 210 40% 92%; /* Light Gray-Blue */
+    --background: 0 0% 8%; /* Near Black */
+    --foreground: 0 0% 95%; /* Light Gray */
 
-    --card: 225 25% 14%; /* Slightly Lighter Navy */
-    --card-foreground: 210 40% 92%;
+    --card: 0 0% 12%; /* Darker Gray */
+    --card-foreground: 0 0% 95%;
 
-    --popover: 225 25% 14%;
-    --popover-foreground: 210 40% 92%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 185 90% 50%; /* Glowing Cyan */
-    --primary-foreground: 225 25% 10%;
+    --primary: 210 100% 55%; /* Brighter Apple Blue */
+    --primary-foreground: 0 0% 10%;
 
-    --secondary: 220 15% 25%; /* Dark Silver/Gunmetal */
-    --secondary-foreground: 210 30% 85%; /* Light Silver Text */
+    --secondary: 0 0% 15%; /* Dark Gray */
+    --secondary-foreground: 0 0% 85%;
 
-    --muted: 225 25% 20%; 
-    --muted-foreground: 220 15% 60%;
+    --muted: 0 0% 20%; 
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 310 100% 65%; /* Neon Magenta */
-    --accent-foreground: 210 40% 98%;
+    --accent: 210 100% 55%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 30%; /* Dark Silver Border */
-    --input: 225 25% 22%;
-    --ring: 185 90% 55%;
+    --border: 0 0% 20%;
+    --input: 0 0% 22%;
+    --ring: 210 100% 55%;
 
-    --chart-1: 185 90% 50%;   /* Glowing Cyan */
-    --chart-2: 310 100% 65%;  /* Neon Magenta */
-    --chart-3: 185 80% 65%;   /* Lighter Cyan */
-    --chart-4: 310 80% 75%;   /* Lighter Magenta */
-    --chart-5: 210 100% 65%;  /* Electric Blue */
+    --chart-1: 210 100% 55%;   /* Brighter Apple Blue */
+    --chart-2: 0 0% 50%;   /* Mid Gray */
+    --chart-3: 210 90% 70%;   /* Lighter Blue */
+    --chart-4: 0 0% 35%;   /* Darker Gray */
+    --chart-5: 0 0% 65%;  /* Lighter Gray */
 
-    --sidebar-background: 225 25% 10%; 
-    --sidebar-foreground: 210 40% 92%;
-    --sidebar-primary: 185 90% 50%;
-    --sidebar-primary-foreground: 225 25% 10%;
-    --sidebar-accent: 310 100% 65%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 225 25% 22%;
-    --sidebar-ring: 185 90% 55%;
+    --sidebar-background: 0 0% 10%; 
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 210 100% 55%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 210 100% 60%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 22%;
+    --sidebar-ring: 210 100% 55%;
   }
 }
  
@@ -106,41 +106,24 @@ html {
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
 
 @layer utilities {
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: hsl(var(--foreground)); }
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
   }
 
-  .blinking-cursor {
-    border-right: 0.15em solid hsl(var(--foreground));
-    animation: blink-caret 1s step-end infinite;
-    padding-left: 2px; 
-    margin-left: 1px; 
+  .section-title {
+    @apply text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl;
+  }
+  
+  .section-subtitle {
+    @apply mt-4 text-lg text-muted-foreground max-w-2xl mx-auto;
   }
 
-  @keyframes text-gradient-flow {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  .animate-text-gradient-flow {
-    animation: text-gradient-flow 4s ease infinite;
-  }
-
-  /* Remove sweep animation */
-  html.dark body {
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  .card-hover {
+    @apply transition-all duration-300 ease-in-out hover:shadow-xl hover:border-border;
   }
 }

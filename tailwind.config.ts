@@ -18,8 +18,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+        headline: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
         code: ['monospace'],
       },
       colors: {
@@ -102,30 +102,18 @@ export default {
         'fade-in-up': {
           '0%': {
             opacity: '0',
-            transform: 'translateY(30px)', // Increased from 20px
+            transform: 'translateY(10px)',
           },
           '100%': {
             opacity: '1',
             transform: 'translateY(0)',
           },
         },
-        'text-gradient-flow': {
-          '0%': {
-            'background-position': '0% 50%',
-          },
-          '50%': {
-            'background-position': '100% 50%',
-          },
-          '100%': {
-            'background-position': '0% 50%',
-          },
-        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
-        'text-gradient-flow': 'text-gradient-flow 4s ease infinite',
+        'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
       },
     },
   },

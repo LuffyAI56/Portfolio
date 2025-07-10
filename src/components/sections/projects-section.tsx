@@ -23,13 +23,11 @@ function ProjectCard({ project, index }: ProjectCardProps) {
       style={{ opacity: 0, animationDelay: `${300 + index * 100}ms` }}
     >
       <Card
-        className="flex flex-col overflow-hidden shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.07] hover:-translate-y-1 h-full"
+        className="flex flex-col overflow-hidden shadow-sm card-hover h-full"
       >
         <CardHeader className="pb-4">
-          <CardTitle className="text-xl font-semibold font-headline">
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
-              {project.title}
-            </span>
+          <CardTitle className="text-xl font-semibold">
+            {project.title}
           </CardTitle>
         </CardHeader>
         <CardContent className="flex-grow space-y-3">
@@ -42,7 +40,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
             <h4 className="text-sm font-medium text-secondary-foreground mb-2">Tech Stack:</h4>
             <div className="flex flex-wrap gap-2">
               {project.techStack.map((tech) => (
-                <Badge key={tech} variant="outline" className="text-xs">
+                <Badge key={tech} variant="secondary" className="font-normal">
                   {tech}
                 </Badge>
               ))}
@@ -52,7 +50,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
         <CardFooter className="pt-4 flex-wrap gap-2">
           <div className="flex w-full items-center justify-start space-x-3">
             {project.githubLink && (
-              <Button variant="outline" size="sm" asChild>
+              <Button variant="secondary" size="sm" asChild>
                 <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" /> GitHub
                 </Link>
@@ -79,15 +77,13 @@ export function ProjectsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
            <h2
-            className="font-headline text-4xl font-bold sm:text-5xl animate-fade-in-up"
+            className="section-title animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '100ms' }}
            >
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
-              Projects
-            </span>
+            Projects
           </h2>
           <p
-            className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up"
+            className="section-subtitle animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '200ms' }}
           >
             Showcasing some of the key projects I've worked on.

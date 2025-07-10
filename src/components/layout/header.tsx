@@ -59,8 +59,8 @@ export function Header() {
     // Simplified placeholder for the name
     const placeholderName = (
       <div className="flex items-center">
-        <div className="h-6 w-20 animate-pulse rounded-md bg-primary/30"></div>
-        <div className="ml-1 h-6 w-32 animate-pulse rounded-md bg-muted/30"></div>
+        <div className="h-6 w-20 animate-pulse rounded-md bg-muted"></div>
+        <div className="ml-1 h-6 w-32 animate-pulse rounded-md bg-muted"></div>
       </div>
     );
 
@@ -69,17 +69,17 @@ export function Header() {
         className={`sticky top-0 z-50 w-full bg-transparent`}
       >
         <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <div className="text-xl font-bold font-headline">
+          <div className="text-xl font-bold">
             {placeholderName}
           </div>
           <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => (
-              <div key={item.label} className="h-9 w-20 rounded-md bg-muted/30 animate-pulse" />
+              <div key={item.label} className="h-9 w-20 rounded-md bg-muted animate-pulse" />
             ))}
-            <div className="h-10 w-10 rounded-full bg-muted/30 animate-pulse" />
+            <div className="h-10 w-10 rounded-full bg-muted animate-pulse" />
           </div>
           <div className="md:hidden">
-            <div className="h-10 w-10 rounded-md bg-muted/30 animate-pulse" />
+            <div className="h-10 w-10 rounded-md bg-muted animate-pulse" />
           </div>
         </div>
       </header>
@@ -93,7 +93,7 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="text-xl font-bold font-headline">
+        <Link href="/" className="text-xl font-bold">
           <span className="text-primary">{firstWord}</span>
           <span className="text-foreground"> {restOfName}</span>
         </Link>
@@ -112,7 +112,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] p-6">
-              <div className="mb-6 text-xl font-bold font-headline">
+              <div className="mb-6 text-xl font-bold">
                 <span className="text-primary">{firstWord}</span>
                 <span className="text-foreground"> {restOfName}</span>
               </div>
