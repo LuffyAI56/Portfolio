@@ -10,94 +10,94 @@ html {
 
 @layer base {
   :root {
-    --background: 0 0% 96%; /* Very light gray for Portfolio Pro */
-    --foreground: 248 39% 11%; /* Very dark slate blue for Portfolio Pro */
+    --background: 210 40% 98%; /* Light Slate */
+    --foreground: 222 47% 11%; /* Dark Slate Blue */
     
     --card: 0 0% 100%; /* White */
-    --card-foreground: 248 39% 11%; /* Very dark slate blue */
+    --card-foreground: 222 47% 11%; /* Dark Slate Blue */
     
     --popover: 0 0% 100%; /* White */
-    --popover-foreground: 248 39% 11%; /* Very dark slate blue */
+    --popover-foreground: 222 47% 11%; /* Dark Slate Blue */
     
-    --primary: 48 96% 50%; /* Vibrant Yellow */
-    --primary-foreground: 48 90% 15%; /* Dark Brownish Yellow for contrast */
+    --primary: 142 76% 36%; /* Forest Green */
+    --primary-foreground: 0 0% 98%; /* Almost White */
     
-    --secondary: 240 60% 85%; /* Soft Light Blue - Kept from previous, can be adjusted if PRD has a specific secondary */
-    --secondary-foreground: 240 70% 25%; /* Darker Blue for contrast on soft light blue */
+    --secondary: 145 58% 92%; /* Light Mint */
+    --secondary-foreground: 142 76% 20%; /* Darker Green */
     
-    --muted: 220 20% 92%; /* Light Grayish Blue - kept for subtle elements */
-    --muted-foreground: 220 15% 40%; /* Medium Grayish Blue */
+    --muted: 210 40% 96%; /* Lighter Slate */
+    --muted-foreground: 215 20% 65%; /* Medium Slate */
     
-    --accent: 240 67% 94%; /* Soft lavender (#E6E6FA) for Portfolio Pro */
-    --accent-foreground: 248 39% 21%; /* Darker slate blue for contrast on soft lavender */
+    --accent: 145 63% 90%; /* Mint Accent */
+    --accent-foreground: 142 76% 25%; /* Darker Green */
     
-    --destructive: 0 75% 55%; /* Standard Red (slightly softer) */
+    --destructive: 0 84% 60%; /* Standard Red */
     --destructive-foreground: 0 0% 98%; /* Almost White */
     
-    --border: 220 15% 85%; /* Light Grayish Blue Border */
-    --input: 220 15% 85%; /* Light Grayish Blue Input */
-    --ring: 48 96% 55%; /* Slightly Lighter Yellow for ring */
+    --border: 214 32% 91%; /* Light Slate Border */
+    --input: 214 32% 91%; /* Light Slate Input */
+    --ring: 142 76% 40%; /* Slightly brighter green for ring */
     
-    --chart-1: 48 96% 50%;   /* Primary Yellow */
-    --chart-2: 240 67% 80%;  /* Lighter Soft Lavender for Accent Chart */
-    --chart-3: 220 70% 60%;   /* Medium Blue */
+    --chart-1: 142 76% 36%;   /* Primary Green */
+    --chart-2: 145 58% 80%;  /* Lighter Mint */
+    --chart-3: 142 60% 50%;   /* Medium Green */
     --chart-4: 150 50% 50%;   /* Seafoam Green */
-    --chart-5: 280 50% 60%;   /* Purple */
+    --chart-5: 160 50% 60%;   /* Tealish Green */
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 95%; 
-    --sidebar-foreground: 248 39% 11%; 
-    --sidebar-primary: 48 96% 50%;    
-    --sidebar-primary-foreground: 48 90% 15%; 
-    --sidebar-accent: 240 67% 94%;     
-    --sidebar-accent-foreground: 248 39% 21%; 
-    --sidebar-border: 220 15% 85%;      
-    --sidebar-ring: 48 96% 55%;
+    --sidebar-background: 210 40% 98%; 
+    --sidebar-foreground: 222 47% 11%; 
+    --sidebar-primary: 142 76% 36%;    
+    --sidebar-primary-foreground: 0 0% 98%; 
+    --sidebar-accent: 145 63% 90%;     
+    --sidebar-accent-foreground: 142 76% 25%; 
+    --sidebar-border: 214 32% 91%;      
+    --sidebar-ring: 142 76% 40%;
   }
  
   .dark {
-    --background: 248 39% 11%; /* Very dark slate blue for Portfolio Pro */
-    --foreground: 0 0% 90%; /* Light gray for Portfolio Pro */
+    --background: 222 47% 11%; /* Dark Slate Blue */
+    --foreground: 210 40% 98%; /* Light Slate */
     
-    --card: 248 39% 16%; /* Slightly Lighter Dark Slate Blue */
-    --card-foreground: 0 0% 90%;
+    --card: 222 47% 15%; /* Slightly Lighter Dark Slate Blue */
+    --card-foreground: 210 40% 98%;
     
-    --popover: 248 39% 16%;
-    --popover-foreground: 0 0% 90%;
+    --popover: 222 47% 15%;
+    --popover-foreground: 210 40% 98%;
     
-    --primary: 48 96% 55%; /* Brighter/Lighter Yellow for Dark Mode */
-    --primary-foreground: 48 90% 15%; /* Dark Brownish Yellow for contrast */
+    --primary: 142 66% 46%; /* Brighter Green for Dark Mode */
+    --primary-foreground: 0 0% 98%;
     
-    --secondary: 240 30% 25%; /* Darker Muted Blue */
-    --secondary-foreground: 240 30% 75%; /* Lighter Muted Blue */
+    --secondary: 145 50% 25%; /* Darker Muted Mint */
+    --secondary-foreground: 145 50% 75%; /* Lighter Muted Mint */
     
-    --muted: 220 25% 20%; /* Dark Grayish Blue */
-    --muted-foreground: 220 15% 55%; /* Medium-Light Grayish Blue */
+    --muted: 222 47% 20%; /* Darker Slate */
+    --muted-foreground: 215 20% 65%; /* Medium Slate */
     
-    --accent: 240 67% 80%; /* Brighter Soft Lavender for Dark Mode */
-    --accent-foreground: 248 39% 90%; /* Light slate blue/gray for contrast */
+    --accent: 145 58% 30%; /* Dark Mint Accent */
+    --accent-foreground: 210 40% 98%;
     
-    --destructive: 0 65% 50%; /* Slightly softer Red for dark mode */
+    --destructive: 0 72% 51%; /* Softer Red for dark mode */
     --destructive-foreground: 0 0% 98%;
     
-    --border: 220 15% 30%; /* Dark Grayish Blue Border */
-    --input: 220 15% 30%;
-    --ring: 48 96% 60%; /* Brighter Yellow for ring */
+    --border: 217 33% 25%; /* Dark Slate Border */
+    --input: 217 33% 25%;
+    --ring: 142 66% 50%; /* Brighter Green for ring */
 
-    --chart-1: 48 96% 55%;   /* Primary Yellow - Dark Mode */
-    --chart-2: 240 67% 70%;  /* Lighter Soft Lavender - Dark Mode */
-    --chart-3: 220 75% 70%;   /* Lighter Medium Blue - Dark Mode */
+    --chart-1: 142 66% 46%;   /* Primary Green - Dark Mode */
+    --chart-2: 145 58% 30%;  /* Dark Mint - Dark Mode */
+    --chart-3: 142 70% 60%;   /* Lighter Medium Green - Dark Mode */
     --chart-4: 150 55% 60%;   /* Lighter Seafoam - Dark Mode */
-    --chart-5: 280 55% 70%;   /* Lighter Purple - Dark Mode */
+    --chart-5: 160 55% 70%;   /* Lighter Tealish Green - Dark Mode */
 
-    --sidebar-background: 248 39% 11%;  
-    --sidebar-foreground: 0 0% 90%; 
-    --sidebar-primary: 48 96% 55%;    
-    --sidebar-primary-foreground: 48 90% 15%; 
-    --sidebar-accent: 240 67% 80%;     
-    --sidebar-accent-foreground: 248 39% 90%; 
-    --sidebar-border: 220 15% 30%;      
-    --sidebar-ring: 48 96% 60%;       
+    --sidebar-background: 222 47% 11%;  
+    --sidebar-foreground: 210 40% 98%; 
+    --sidebar-primary: 142 66% 46%;    
+    --sidebar-primary-foreground: 0 0% 98%; 
+    --sidebar-accent: 145 58% 30%;     
+    --sidebar-accent-foreground: 210 40% 98%; 
+    --sidebar-border: 217 33% 25%;      
+    --sidebar-ring: 142 66% 50%;       
   }
 }
  

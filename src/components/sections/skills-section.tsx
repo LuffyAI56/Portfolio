@@ -21,7 +21,7 @@ export function SkillsSection() {
             className="font-headline text-4xl font-bold sm:text-5xl animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '100ms' }}
           >
-            <span className="bg-gradient-to-r from-custom-deep-indigo via-custom-teal to-custom-silver-mist bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
+            <span className="bg-gradient-to-r from-primary via-green-400 to-secondary-foreground bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
               Technical Skills
             </span>
           </h2>
@@ -48,7 +48,7 @@ export function SkillsSection() {
                   <CardHeader>
                     <CardTitle className="flex items-center text-xl font-semibold">
                       <Icon className="mr-3 h-6 w-6 text-primary/80" />
-                      <span className="bg-gradient-to-r from-custom-deep-indigo via-custom-teal to-custom-silver-mist bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
+                      <span className="bg-gradient-to-r from-primary via-green-400 to-secondary-foreground bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
                         {skillCategory.category}
                       </span>
                     </CardTitle>
