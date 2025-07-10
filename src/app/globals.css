@@ -5,99 +5,98 @@
 
 html {
   scroll-behavior: smooth;
-  position: relative; /* For potential pseudo-element animations if needed later */
 }
 
 @layer base {
   :root {
-    --background: 210 40% 98%; /* Light Slate */
-    --foreground: 222 47% 11%; /* Dark Slate Blue */
+    --background: 220 15% 95%; /* Light Cool Gray */
+    --foreground: 225 25% 15%; /* Dark Slate Blue */
+
+    --card: 0 0% 100%;
+    --card-foreground: 225 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 25% 15%;
+
+    --primary: 195 85% 45%; /* Strong Cyan */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 200 50% 90%; /* Light Cyan */
+    --secondary-foreground: 195 85% 25%;
+
+    --muted: 220 15% 90%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 320 80% 60%; /* Vibrant Magenta */
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 195 85% 50%;
     
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 222 47% 11%; /* Dark Slate Blue */
-    
-    --popover: 0 0% 100%; /* White */
-    --popover-foreground: 222 47% 11%; /* Dark Slate Blue */
-    
-    --primary: 142 76% 36%; /* Forest Green */
-    --primary-foreground: 0 0% 98%; /* Almost White */
-    
-    --secondary: 145 58% 92%; /* Light Mint */
-    --secondary-foreground: 142 76% 20%; /* Darker Green */
-    
-    --muted: 210 40% 96%; /* Lighter Slate */
-    --muted-foreground: 215 20% 65%; /* Medium Slate */
-    
-    --accent: 145 63% 90%; /* Mint Accent */
-    --accent-foreground: 142 76% 25%; /* Darker Green */
-    
-    --destructive: 0 84% 60%; /* Standard Red */
-    --destructive-foreground: 0 0% 98%; /* Almost White */
-    
-    --border: 214 32% 91%; /* Light Slate Border */
-    --input: 214 32% 91%; /* Light Slate Input */
-    --ring: 142 76% 40%; /* Slightly brighter green for ring */
-    
-    --chart-1: 142 76% 36%;   /* Primary Green */
-    --chart-2: 145 58% 80%;  /* Lighter Mint */
-    --chart-3: 142 60% 50%;   /* Medium Green */
-    --chart-4: 150 50% 50%;   /* Seafoam Green */
-    --chart-5: 160 50% 60%;   /* Tealish Green */
+    --chart-1: 195 85% 45%;   /* Strong Cyan */
+    --chart-2: 320 80% 60%;   /* Vibrant Magenta */
+    --chart-3: 195 70% 60%;   /* Lighter Cyan */
+    --chart-4: 320 60% 70%;   /* Lighter Magenta */
+    --chart-5: 210 70% 55%;   /* Electric Blue */
     --radius: 0.5rem;
 
-    --sidebar-background: 210 40% 98%; 
-    --sidebar-foreground: 222 47% 11%; 
-    --sidebar-primary: 142 76% 36%;    
-    --sidebar-primary-foreground: 0 0% 98%; 
-    --sidebar-accent: 145 63% 90%;     
-    --sidebar-accent-foreground: 142 76% 25%; 
-    --sidebar-border: 214 32% 91%;      
-    --sidebar-ring: 142 76% 40%;
+    --sidebar-background: 220 15% 95%; 
+    --sidebar-foreground: 225 25% 15%; 
+    --sidebar-primary: 195 85% 45%;    
+    --sidebar-primary-foreground: 210 40% 98%; 
+    --sidebar-accent: 320 80% 60%;     
+    --sidebar-accent-foreground: 210 40% 98%; 
+    --sidebar-border: 220 15% 85%;      
+    --sidebar-ring: 195 85% 50%;
   }
  
   .dark {
-    --background: 222 47% 11%; /* Dark Slate Blue */
-    --foreground: 210 40% 98%; /* Light Slate */
-    
-    --card: 222 47% 15%; /* Slightly Lighter Dark Slate Blue */
-    --card-foreground: 210 40% 98%;
-    
-    --popover: 222 47% 15%;
-    --popover-foreground: 210 40% 98%;
-    
-    --primary: 142 66% 46%; /* Brighter Green for Dark Mode */
-    --primary-foreground: 0 0% 98%;
-    
-    --secondary: 145 50% 25%; /* Darker Muted Mint */
-    --secondary-foreground: 145 50% 75%; /* Lighter Muted Mint */
-    
-    --muted: 222 47% 20%; /* Darker Slate */
-    --muted-foreground: 215 20% 65%; /* Medium Slate */
-    
-    --accent: 145 58% 30%; /* Dark Mint Accent */
+    --background: 225 25% 10%; /* Deep Navy Blue */
+    --foreground: 210 40% 92%; /* Light Gray-Blue */
+
+    --card: 225 25% 14%; /* Slightly Lighter Navy */
+    --card-foreground: 210 40% 92%;
+
+    --popover: 225 25% 14%;
+    --popover-foreground: 210 40% 92%;
+
+    --primary: 185 90% 50%; /* Glowing Cyan */
+    --primary-foreground: 225 25% 10%;
+
+    --secondary: 225 25% 25%; /* Dark Muted Navy */
+    --secondary-foreground: 185 80% 70%; 
+
+    --muted: 225 25% 20%; 
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 310 100% 65%; /* Neon Magenta */
     --accent-foreground: 210 40% 98%;
-    
-    --destructive: 0 72% 51%; /* Softer Red for dark mode */
+
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
-    
-    --border: 217 33% 25%; /* Dark Slate Border */
-    --input: 217 33% 25%;
-    --ring: 142 66% 50%; /* Brighter Green for ring */
 
-    --chart-1: 142 66% 46%;   /* Primary Green - Dark Mode */
-    --chart-2: 145 58% 30%;  /* Dark Mint - Dark Mode */
-    --chart-3: 142 70% 60%;   /* Lighter Medium Green - Dark Mode */
-    --chart-4: 150 55% 60%;   /* Lighter Seafoam - Dark Mode */
-    --chart-5: 160 55% 70%;   /* Lighter Tealish Green - Dark Mode */
+    --border: 225 25% 22%; /* Navy Border */
+    --input: 225 25% 22%;
+    --ring: 185 90% 55%;
 
-    --sidebar-background: 222 47% 11%;  
-    --sidebar-foreground: 210 40% 98%; 
-    --sidebar-primary: 142 66% 46%;    
-    --sidebar-primary-foreground: 0 0% 98%; 
-    --sidebar-accent: 145 58% 30%;     
-    --sidebar-accent-foreground: 210 40% 98%; 
-    --sidebar-border: 217 33% 25%;      
-    --sidebar-ring: 142 66% 50%;       
+    --chart-1: 185 90% 50%;   /* Glowing Cyan */
+    --chart-2: 310 100% 65%;  /* Neon Magenta */
+    --chart-3: 185 80% 65%;   /* Lighter Cyan */
+    --chart-4: 310 80% 75%;   /* Lighter Magenta */
+    --chart-5: 210 100% 65%;  /* Electric Blue */
+
+    --sidebar-background: 225 25% 10%; 
+    --sidebar-foreground: 210 40% 92%;
+    --sidebar-primary: 185 90% 50%;
+    --sidebar-primary-foreground: 225 25% 10%;
+    --sidebar-accent: 310 100% 65%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 225 25% 22%;
+    --sidebar-ring: 185 90% 55%;
   }
 }
  
@@ -138,5 +137,10 @@ html {
 
   .animate-text-gradient-flow {
     animation: text-gradient-flow 4s ease infinite;
+  }
+
+  /* Remove sweep animation */
+  html.dark body {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
   }
 }

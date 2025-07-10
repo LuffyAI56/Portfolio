@@ -27,7 +27,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
       >
         <CardHeader className="pb-4">
           <CardTitle className="text-xl font-semibold font-headline">
-            <span className="bg-gradient-to-r from-primary via-green-400 to-secondary-foreground bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
+            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
               {project.title}
             </span>
           </CardTitle>
@@ -82,7 +82,7 @@ export function ProjectsSection() {
             className="font-headline text-4xl font-bold sm:text-5xl animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '100ms' }}
            >
-            <span className="bg-gradient-to-r from-primary via-green-400 to-secondary-foreground bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
+            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
               Projects
             </span>
           </h2>

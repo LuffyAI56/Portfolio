@@ -12,7 +12,7 @@ export function AboutSection() {
             className="font-headline text-4xl font-bold sm:text-5xl animate-fade-in-up"
             style={{ opacity: 0, animationDelay: '100ms' }}
           >
-            <span className="bg-gradient-to-r from-primary via-green-400 to-secondary-foreground bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
+            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
               About Me
             </span>
           </h2>
@@ -32,7 +32,7 @@ export function AboutSection() {
             <CardHeader>
               <CardTitle className="flex items-center text-2xl font-semibold">
                 <UserCircle className="mr-3 h-8 w-8 text-primary" />
-                <span className="bg-gradient-to-r from-primary via-green-400 to-secondary-foreground bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
+                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-text-gradient-flow bg-[size:200%_auto]">
                   {portfolioData.name}
                 </span>
               </CardTitle>
