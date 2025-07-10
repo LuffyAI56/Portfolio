@@ -5,7 +5,7 @@ import { UserCircle } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-16 sm:py-24 bg-background">
+    <section id="about" className="py-16 sm:py-24 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2
@@ -26,7 +26,7 @@ export function AboutSection() {
           className="animate-fade-in-up"
           style={{ opacity: 0, animationDelay: '300ms' }}
         >
-          <Card className="shadow-sm card-hover">
+          <Card className="shadow-sm card-hover glassmorphic">
             <CardHeader>
               <CardTitle className="flex items-center text-2xl font-semibold">
                 <UserCircle className="mr-3 h-8 w-8 text-primary" />

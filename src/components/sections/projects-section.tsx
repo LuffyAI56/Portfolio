@@ -11,7 +11,7 @@ import { Github, ExternalLink } from "lucide-react";
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="flex flex-col overflow-hidden shadow-sm h-full card-hover">
+    <Card className="flex flex-col overflow-hidden shadow-sm h-full card-hover glassmorphic">
       <CardHeader className="pb-4">
         <CardTitle className="text-xl font-semibold text-foreground">
           {project.title}
@@ -58,7 +58,7 @@ function ProjectCard({ project }: { project: Project }) {
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-16 sm:py-24 bg-background">
+    <section id="projects" className="py-16 sm:py-24 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2

@@ -67,7 +67,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-secondary/50">
+    <section id="contact" className="py-16 sm:py-24 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2
@@ -96,7 +96,7 @@ export function ContactSection() {
                   target={item.target} 
                   rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
                   aria-label={item.ariaLabel}
-                  className={`block p-4 sm:p-6 border rounded-lg shadow-sm transition-all duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 bg-card text-center ${item.minWidthClass} group card-hover`}
+                  className={`block p-4 sm:p-6 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 text-center ${item.minWidthClass} group card-hover glassmorphic`}
                 >
                   <div className="flex flex-col items-center justify-center">
                     <item.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary group-hover:text-accent mb-3 sm:mb-4 transition-colors" />

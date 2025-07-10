@@ -33,7 +33,7 @@ export function HeroSection() {
     return (
       <section
         id="hero"
-        className="flex min-h-[calc(100vh-5rem)] items-center bg-secondary/50 py-20"
+        className="flex min-h-[calc(100vh-5rem)] items-center bg-transparent py-20"
       >
         <div className="container mx-auto px-4 text-center sm:px-6 lg:px-8">
           {/* Placeholder for H1 */}
@@ -60,7 +60,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="flex min-h-[calc(100vh-5rem)] items-center bg-secondary/50 py-20"
+      className="flex min-h-[calc(100vh-5rem)] items-center bg-transparent py-20"
     >
       <div className="container mx-auto px-4 text-center sm:px-6 lg:px-8">
         <h1

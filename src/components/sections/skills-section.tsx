@@ -14,7 +14,7 @@ const categoryIcons: { [key: string]: React.ElementType } = {
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="py-16 sm:py-24 bg-secondary/50">
+    <section id="skills" className="py-16 sm:py-24 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2
@@ -41,7 +41,7 @@ export function SkillsSection() {
                 style={{ opacity: 0, animationDelay: `${300 + index * 150}ms` }}
               >
                 <Card
-                  className="shadow-sm card-hover h-full"
+                  className="shadow-sm card-hover h-full glassmorphic"
                 >
                   <CardHeader>
                     <CardTitle className="flex items-center text-xl font-semibold">
