@@ -1,7 +1,7 @@
 
 import { portfolioData } from "@/lib/portfolio-data";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CalendarDays, Award } from "lucide-react";
+import { CalendarDays, Award, MapPin } from "lucide-react";
 
 export function EducationSection() {
   return (
@@ -46,11 +46,17 @@ export function EducationSection() {
                   {edu.gpa && (
                     <div className="flex items-center text-base text-foreground/90">
                       <Award className="mr-2 h-4 w-4 text-primary/80" />
-                      <span>GPA: {edu.gpa}</span>
+                      <span>
+                        {edu.degree.includes("Intermediate") ? "Percentage: " : "CGPA: "}
+                        {edu.gpa}
+                      </span>
                     </div>
                   )}
                   {edu.details && edu.details.map((detail, i) => (
-                    <p key={i} className="text-base text-foreground/90 leading-relaxed">{detail}</p>
+                     <div key={i} className="flex items-center text-base text-foreground/90">
+                      <MapPin className="mr-2 h-4 w-4 text-primary/80" />
+                      <span>{detail}</span>
+                    </div>
                   ))}
                 </CardContent>
               </Card>

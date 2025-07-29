@@ -6,6 +6,7 @@ export interface Project {
   techStack: string[];
   githubLink?: string;
   liveLink?: string;
+  kaggleLink?: string;
 }
 
 export interface SkillCategory {
@@ -59,91 +60,83 @@ export const portfolioData: PortfolioData = {
     github: "https://github.com/sriram020204",
     kaggle: "https://www.kaggle.com/sriramginjala",
   },
-  heroTagline: "Passionate about machine learning and dedicated to advancing technology through impactful projects.",
+  heroTagline: "Experienced in building AI-driven web applications and eager to contribute to impactful real-world projects.",
   aboutMe: [
-    "Passionate about machine learning and skilled. Enrolled in a Bachelor’s program in Computer Science Engineering, demonstrating a dedication to lifelong study and advancement.",
-    "I’m excited to contribute to unique projects that advance technology and have a meaningful impact."
+    "Motivated B.Tech (CSE) student with a strong foundation in Machine Learning, Deep Learning, NLP, and Large Language Models (LLMs).",
+    "Seeking opportunities to apply theoretical knowledge, enhance practical skills, and collaborate on innovative AI solutions."
   ],
   skills: [
-    { category: "Languages", skills: ["Python", "Java", "C", "MySQL"] },
-    { category: "Machine Learning", skills: ["Deep Learning", "Image Processing", "Natural Language Processing (NLP)", "LLM Fine-tuning"] },
-    { category: "Data Science & Analytics", skills: ["Data Pre-processing", "Feature Engineering", "Exploratory Data Analysis (EDA)", "Statistical Analysis", "Predictive Modeling"] },
-    { category: "Developer Tools", skills: ["Git", "GitHub", "Azure"] },
-    {
-      category: "Libraries & Frameworks",
-      skills: [
-        "Pandas",
-        "NumPy",
-        "Scikit-Learn",
-        "TensorFlow",
-        "Keras",
-        "PyTorch",
-        "NLTK",
-        "Matplotlib",
-        "Seaborn",
-        "spaCy",
-        "Hugging Face Transformers"
-      ]
-    }
+    { category: "Languages", skills: ["Python", "C", "SQL"] },
+    { category: "Libraries & Frameworks", skills: ["TensorFlow", "PyTorch", "FastAPI", "Langchain", "LangGraph", "Pandas", "NumPy", "Scikit-learn", "SpaCy", "NLTK", "Transformers"] },
+    { category: "Developer Tools", skills: ["Git", "Docker", "VS Code", "Jupyter", "Azure", "GCP", "Google Colab"] },
+    { category: "Databases & Query Tools", skills: ["MySQL", "MongoDB"] },
+    { category: "ML/AI Toolkits", skills: ["Hugging Face Transformers", "OpenAI API", "Google Gemini API", "Azure AI Studio"] }
   ],
   projects: [
     {
-      id: "medico",
-      title: "Medical Automation System – Diet Recommendation",
+      id: "tendorix-ai",
+      title: "Tendorix A.I",
       description: [
-        "Developed a personalized diet recommendation system integrated into a medical automation platform.",
-        "Leveraged K-Nearest Neighbors (k = 5) to recommend meal plans based on user health records, nutritional requirements, and restrictions.",
-        "Enhanced doctor-patient interaction by automating dietary consultations.",
-        "Used patient data (e.g., BMI, height, preferences, etc.) to recommend diets.",
-        "Created a scalable module integrated with other patient services."
+        "Built an end-to-end AI platform to automate tender eligibility analysis from raw PDF documents.",
+        "Integrated Azure Document Intelligence for OCR and layout parsing; used Zephyr LLM for structured eligibility extraction (89%+ accuracy).",
+        "Implemented semantic matching using all-MiniLM-L6-v2 to align company profiles with tender requirements.",
+        "Developed summarization pipelines that reduced tender length by 60–70%, improving user comprehension.",
+        "Automated proposal generation using dynamic templates populated with extracted and matched data.",
+        "Built full-stack infrastructure using FastAPI, MongoDB, and Firebase for real-time user interaction."
       ],
-      techStack: ["Python", "Scikit-Learn", "Pandas", "NumPy"],
-      githubLink: "https://github.com/SlayZ121/Medico",
+      techStack: ["Python", "FastAPI", "MongoDB", "Azure AI", "GCP", "Firebase", "LLMs"],
+      githubLink: "https://github.com/sriram020204",
     },
     {
       id: "electricity-demand",
-      title: "Electricity Demand Prediction using LSTM",
+      title: "Electricity Demand Forecasting – Odisha SLDC",
       description: [
-        "Built a deep learning model using LSTM to forecast electricity consumption based on historical usage, weather, holidays, and temporal features.",
-        "The model achieved <8% error, aiding utilities in load balancing and efficient grid management.",
-        "Used time series data with external features for contextual forecasting.",
-        "Designed model pipeline from data cleaning to deployment-ready results."
+        "Built a deep learning pipeline using N-BEATS to forecast 15-minute interval electricity demand for Odisha’s South Zone under SLDC supervision.",
+        "Engineered lag features, squared weather covariates, and rolling aggregates from temperature, humidity, pressure, and rainfall data.",
+        "Trained model with a 672-input / 96-output window, achieving MAE: 26.89, MAPE: 5.11%, and sMAPE: 5.04%."
       ],
-      techStack: ["Python", "TensorFlow", "Keras", "Pandas", "NumPy"],
+      techStack: ["PyTorch", "N-BEATS", "Pandas", "Scikit-learn"],
+      kaggleLink: "https://www.kaggle.com/code/sriramginjala/electricity-demand-forecasting-using-n-beats"
     },
     {
-      id: "spam-classifier",
-      title: "Spam vs Ham Text Classifier",
+      id: "diet-recommendation",
+      title: "Personalized Diet Recommendation Feature",
       description: [
-        "Built a binary classification system to detect spam SMS using natural language processing and Naive Bayes.",
-        "Preprocessing included tokenization, lemmatization, stopword removal, and TF-IDF vectorization.",
-        "Addressed class imbalance using RandomOverSampler and validated with ROC-AUC and confusion matrix visualizations.",
-        "Full pipeline: Data cleaning, feature extraction, modeling, and evaluation.",
-        "Achieved high accuracy and recall with balanced dataset."
+        "Developed a K-Nearest Neighbors-based diet recommendation feature for a health website, tailored to users’ weight, height, BMI, and dietary restrictions.",
+        "Engineered user profile vectors and applied distance-based similarity to suggest personalized daily meal plans."
       ],
-      techStack: ["Python", "Scikit-Learn", "NLTK", "Pandas", "Matplotlib"],
-      githubLink: "https://github.com/sriram020204",
+      techStack: ["Python", "Scikit-learn", "KNN"],
+      githubLink: "https://github.com/SlayZ121/Medico",
     }
   ],
   experience: [
     {
       company: "Quadric IT",
-      role: "AI/ML Intern",
-      dates: "May 2025 – Present",
+      role: "A.I/M.L Intern",
+      dates: "May 2025 – July 2025",
       description: [
-        "Currently working on extracting eligibility criteria from tender documents.",
-        "Developing methods to compare extracted tender information with company profiles.",
-        "This is an ongoing project focused on automating and improving the tender bidding process."
+        "Developed an AI system to extract eligibility criteria from tender documents using OCR and rule-based parsing.",
+        "Implemented a semantic matching pipeline to assess company eligibility against extracted tender requirements.",
+        "Created modules for tender summarization and dynamic document generation using user-defined templates.",
+        "Built backend APIs with FastAPI and MongoDB; designed frontend workflows using Firebase Studio."
       ],
-      location: "Hyderabad, Telangana (On-site)"
+      location: "Hyderabad (Remote)"
     }
   ],
   education: [
     {
-      institution: "Atal Bihari Vajpayee Indian Institute of Information Technology and Management",
-      degree: "BS in Computer Science",
-      dates: "Nov. 2022 – June 2026",
-      gpa: "7.70/10",
+      institution: "Indian Institute of Information Technology and Management, Gwalior",
+      degree: "Bachelor of Engineering in Computer Science",
+      dates: "Nov 2022 – Apr 2026",
+      gpa: "7.7 / 10",
+      details: ["Madhya Pradesh"],
+    },
+    {
+      institution: "Sasi Jr College, Velivennu",
+      degree: "Intermediate (MPC)",
+      dates: "Jul 2019 – Jul 2021",
+      gpa: "98.3%",
+      details: ["Andhra Pradesh"],
     }
   ]
 };

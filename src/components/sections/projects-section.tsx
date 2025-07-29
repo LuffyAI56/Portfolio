@@ -8,6 +8,21 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Github, ExternalLink } from "lucide-react";
+import React from 'react';
+
+// Simple Kaggle Icon SVG component
+const KaggleIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    role="img"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    {...props}
+  >
+    <title>Kaggle</title>
+    <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontSize="18px" fontFamily="system-ui, sans-serif" fontWeight="bold" fill="currentColor">k</text>
+  </svg>
+);
 
 function ProjectCard({ project }: { project: Project }) {
   return (
@@ -49,6 +64,13 @@ function ProjectCard({ project }: { project: Project }) {
                 <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
               </Link>
             </Button>
+          )}
+          {project.kaggleLink && (
+             <Button variant="secondary" size="sm" asChild>
+             <Link href={project.kaggleLink} target="_blank" rel="noopener noreferrer">
+               <KaggleIcon className="mr-2 h-4 w-4" /> Kaggle
+             </Link>
+           </Button>
           )}
         </div>
       </CardFooter>
