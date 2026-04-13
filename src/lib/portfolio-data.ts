@@ -52,7 +52,7 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   name: "Ginjala Sri Ram Kumar Reddy",
-  role: "AI/ML & NLP Enthusiast",
+  role: "AI/ML Engineer and Computer Science undergraduate",
   contact: {
     email: "sriramginjala60@gmail.com",
     phone: "+91 8790567522",
@@ -60,17 +60,17 @@ export const portfolioData: PortfolioData = {
     github: "https://github.com/sriram020204",
     kaggle: "https://www.kaggle.com/sriramginjala",
   },
-  heroTagline: "Experienced in building AI-driven web applications and eager to contribute to impactful real-world projects.",
+  heroTagline: "AI/ML Engineer skilled in building end-to-end AI solutions and predictive modeling systems.",
   aboutMe: [
-    "Motivated B.Tech (CSE) student with a strong foundation in Machine Learning, Deep Learning, NLP, and Large Language Models (LLMs).",
-    "Seeking opportunities to apply theoretical knowledge, enhance practical skills, and collaborate on innovative AI solutions."
+    "AI/ML Engineer and Computer Science undergraduate with experience in building end-to-end AI solutions, and predictive modeling systems.",
+    "Skilled in Python, SQL, TensorFlow, PyTorch, and modern LLM ecosystems."
   ],
   skills: [
-    { category: "Languages", skills: ["Python", "C", "SQL"] },
-    { category: "Libraries & Frameworks", skills: ["TensorFlow", "PyTorch", "FastAPI", "Langchain", "LangGraph", "Pandas", "NumPy", "Scikit-learn", "SpaCy", "NLTK", "Transformers"] },
-    { category: "Developer Tools", skills: ["Git", "Docker", "VS Code", "Jupyter", "Azure", "GCP", "Google Colab"] },
-    { category: "Databases & Query Tools", skills: ["MySQL", "MongoDB"] },
-    { category: "ML/AI Toolkits", skills: ["Hugging Face Transformers", "OpenAI API", "Google Gemini API", "Azure AI Studio"] }
+    { category: "Languages", skills: ["Python", "SQL"] },
+    { category: "Libraries & Frameworks", skills: ["TensorFlow", "PyTorch", "Pandas", "NumPy", "Scikit-learn", "NLTK", "Transformers", "Matplotlib"] },
+    { category: "Developer Tools", skills: ["Git", "VS Code", "Jupyter"] },
+    { category: "Databases & Query Tools", skills: ["MySQL"] },
+    { category: "ML/AI Toolkits", skills: ["Hugging Face Transformers"] }
   ],
   projects: [
     {
@@ -82,7 +82,7 @@ export const portfolioData: PortfolioData = {
         "Implemented semantic matching using all-MiniLM-L6-v2 to align company profiles with tender requirements.",
         "Developed summarization pipelines that reduced tender length by 60–70%, improving user comprehension.",
         "Automated proposal generation using dynamic templates populated with extracted and matched data.",
-        "Built full-stack infrastructure using FastAPI, MongoDB, and Firebase for real-time user interaction."
+        "Reduced manual eligibility verification time by 90%, significantly accelerating tender processing for companies."
       ],
       techStack: ["Python", "FastAPI", "MongoDB", "Azure AI", "GCP", "Firebase", "LLMs"],
       githubLink: "https://github.com/sriram020204",
@@ -117,18 +117,17 @@ export const portfolioData: PortfolioData = {
       description: [
         "Developed an AI system to extract eligibility criteria from tender documents using OCR and rule-based parsing.",
         "Implemented a semantic matching pipeline to assess company eligibility against extracted tender requirements.",
-        "Created modules for tender summarization and dynamic document generation using user-defined templates.",
-        "Built backend APIs with FastAPI and MongoDB; designed frontend workflows using Firebase Studio."
+        "Created modules for tender summarization and dynamic document generation using user-defined templates."
       ],
-      location: "Hyderabad (Remote)"
+      location: "Hyderabad (On-site)"
     }
   ],
   education: [
     {
       institution: "Indian Institute of Information Technology and Management, Gwalior",
-      degree: "Bachelor of Engineering in Computer Science",
+      degree: "B.Tech in Computer Science and Engineering",
       dates: "Nov 2022 – Apr 2026",
-      gpa: "7.7 / 10",
+      gpa: "7.64 / 10",
       details: ["Madhya Pradesh"],
     },
     {
